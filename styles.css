@@ -1,0 +1,7 @@
+@font-face {
+    font-family: "MyCustomFont";
+    src: url("Minecraft.ttf") format("truetype");
+}
+body {
+    font-family: "MyCustomFont", Arial, sans-serif;
+}

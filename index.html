@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>X_X</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: gray;
+        color: #000;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        width: 80%;
+        margin: 50px auto;
+    }
+    .tabs {
+        overflow: hidden;
+        background-color: 	#89CFF0;
+        border-radius: 5px;
+    }
+    .tab {
+        float: left;
+        cursor: pointer;
+        padding: 10px 20px;
+        transition: background-color 0.3s;
+    }
+    .tab:hover {
+        background-color: gray;
+    }
+    .content {
+        display: none;
+        padding: 20px;
+        border-radius: 5px;
+        border: 1px solid #333;
+    }
+    .active {
+        display: block;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="tabs">
+        <div class="tab" onclick="openTab(event, 'tab1')">Проекты</div>
+        <div class="tab" onclick="openTab(event, 'tab2')">Контакты</div>
+        <div class="tab" onclick="openTab(event, 'tab3')">Благодарность</div>
+        <div class="tab" onclick="openTab(event, 'tab4')">Просто пустая вкладка</div>
+    </div>
+
+    <div id="tab1" class="content">
+        <!-- Содержимое для вкладки 1 -->
+        <h1>Калькулятор 1.0</h1>
+        <p>Фу старьёёёё</p>
+        <a href="https://replit.com/@mironxx555/pyCalculator?v=1#main.py"><img src="images/calculator.png" alt="Нахуй ты это читаешь"></a>
+        
+
+        <h1>Калькулятор 2.0</h1>
+        <p>Усовершенствованная хухня...</p>
+        <a href="https://replit.com/@mironxx555/pyCalculator20?v=1"><img src="images/new_calculator.png" alt="Нахуй ты это читаешь"></a>
+
+
+        <h1><a href="https://replit.com/@mironxx555/pyChtoByTySdielal?v=1"></a>Что бы ты сделал?</h1>
+        <p><a href="https://replit.com/@mironxx555/pyChtoByTySdielal?v=1">Да хуй знает что бы я сделал!</a></p>
+
+    </div>
+
+    <div id="tab2" class="content">
+        <!-- Содержимое для вкладки 2 -->
+        <a href="https://replit.com/@mironxx555">
+            <h1>Replit</h1>
+        </a>
+        <a href="https://github.com/MironXX555">
+            <h1>Github</h1>
+        </a>
+        
+        
+    </div>
+
+    <div id="tab3" class="content">
+        <!-- Содержимое для вкладки 3 -->
+        <a href="https://discord.gg/BABjR3BYHp">
+            <h1>Оссобенная Благодарность серверу Classic Code потому что из за них во мне возрадилось слово "Программирование"!</h1>
+        </a>
+        
+    </div>
+
+    <div id="tab4" class="content">
+        <!-- Содержимое для вкладки 4 -->
+    </div>
+</div>
+
+<script>
+    function openTab(evt, tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("content");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tab");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+</script>
+
+</body>
+</html>
